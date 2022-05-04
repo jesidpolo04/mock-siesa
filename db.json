@@ -1,24 +1,161 @@
 {
     "marcas":[
         {
-            "id": "1000",
-            "nombre": "Colanta Render"
+            "id":"1000",
+            "nombre": "Colanta Int",
+            "negocio": "mercolanta"
         },
         {
             "id":"2000",
-            "nombre": "Montefrio Render"
+            "nombre": "Montefrio Int",
+            "negocio": "mercolanta"
         },
         {
             "id":"3000",
-            "nombre":"Tampico Render"
+            "nombre":"Tampico Int",
+            "negocio": "mercolanta"
         },
         {
             "id":"4000",
-            "nombre":"Pulpy Render"
+            "nombre":"Pulpy Int",
+            "negocio": "mercolanta"
         },
         {
             "id":"5000",
-            "nombre":"Diana Render"
+            "nombre":"Bimbo Int",
+            "negocio": "mercolanta"
         }
-    ]
+    ],
+    
+    "familias":[
+        {
+            "id":"1000",
+            "nombre":"Leches Fluidas Int",
+            "negocio": "mercolanta",
+            "lineas":[
+                {
+                    "id":"1001",
+                    "nombre":"Leche Pasteurizada Int"
+                },
+                {
+                    "id":"1002",
+                    "nombre":"Leche UHT Int"
+                }
+            ]
+        },
+        {
+            "id":"2000",
+            "nombre":"Pulverizados Int",
+            "negocio": "mercolanta",
+            "lineas":[
+                {
+                    "id":"2001",
+                    "nombre":"Leche en Polvo Int"
+                },
+                {
+                    "id":"2002",
+                    "nombre":"Suero Int"
+                }
+            ]
+        }
+
+    ],
+
+    "productos":{
+        "productos":[
+            {
+                "tipo": 1,
+                "id": "400L",
+                "nombre": "PRODUCTO PRUEBA INTEGRACIÓN 1",
+                "referencia": "400L",
+                "ean": "1188",
+                "descripcion": "DESCRIPCIÓN PRODUCTO DE INTEGRACIÓN",
+                "id_marca": "1000",
+                "id_linea": "1001",
+                "tipo_producto": "ROSADO",
+                "unidad_medida": "UND",
+                "iva_aplica": 5.0000,
+                "negocio": "mercolanta",
+                "dimensiones": {
+                    "alto_producto": 0,
+                    "ancho_producto": 0,
+                    "largo_producto": 0,
+                    "peso_neto": 0,
+                    "peso_bruto": 0
+                },
+                "variaciones": []
+            },
+            {
+                "tipo": 1,
+                "id": "500L",
+                "nombre": "PRODUCTO PRUEBA INTEGRACIÓN 2",
+                "referencia": "500L",
+                "ean": "1188",
+                "descripcion": "PRODUCTO PRUEBA INTEGRACIÓN 2",
+                "id_marca": "2000",
+                "id_linea": "1001",
+                "tipo_producto": "ROSADO",
+                "unidad_medida": "UND",
+                "iva_aplica": 5.0000,
+                "negocio": "mercolanta",
+                "dimensiones": {
+                    "alto_producto": 0,
+                    "ancho_producto": 0,
+                    "largo_producto": 0,
+                    "peso_neto": 0,
+                    "peso_bruto": 0
+                },
+                "variaciones": []
+            },
+            {
+                "tipo": 1,
+                "id": "600L",
+                "nombre": "PRODUCTO DE INTEGRACIÓN 3",
+                "referencia": "600L",
+                "ean": "1188",
+                "descripcion": "PRODUCTO PRUEBA INTEGRACIÓN 1",
+                "id_marca": "3000",
+                "id_linea": "1001",
+                "tipo_producto": "ROSADO",
+                "unidad_medida": "UND",
+                "iva_aplica": 5.0000,
+                "negocio": "mercolanta",
+                "dimensiones": {
+                    "alto_producto": 0,
+                    "ancho_producto": 0,
+                    "largo_producto": 0,
+                    "peso_neto": 0,
+                    "peso_bruto": 0
+                },
+                "variaciones": []
+            }
+        ]
+    },
+    "precios":{
+        "precios_productos":[
+            {
+                "id_producto" : "400L",
+                "id_variacion" : null,
+                "precio_publico" : 12590,
+                "negocio": "mercolanta"
+            },
+            {
+                "id_producto" : "500L",
+                "id_variacion" : null,
+                "precio_publico" : 6000,
+                "negocio": "mercolanta"
+            },
+            {
+                "id_producto" : "600L",
+                "id_variacion" : null,
+                "precio_publico" : 20200,
+                "negocio": "mercolanta"
+            }
+        ]
+    },
+
+    "clientes": {
+        "status" : true,
+        "tipo_cliente" : "1001"
+    }
 }
