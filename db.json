@@ -210,6 +210,87 @@
                     "maximo_items_validos_por": "carrito",
                     "maximo_items_validos": 0
                 }
+            },
+            {
+                "id": "50-10",
+                "tipo": "bono",
+                "nombre": "POS - 2X1",
+                "negocio": "mercolanta",
+                "fecha_inicio_utc": "2021-05-01T05:00:00",
+                "fecha_final_utc": "2022-07-31T05:00:00",
+                "configuracion": {
+                    "porcentaje": null,
+                    "valor": 100.0000,
+                    "pague": 3,
+                    "lleve": 4,
+                    "tipo": "porcentaje",
+                    "items_de_regalo": null,
+                    "cantidad_de_regalos_seleccionables": null,
+                    "cantidad_minima_de_items_para_aplicar": null,
+                    "lista1": null,
+                    "lista2": null,
+                    "porcentaje_descuento_lista1": null,
+                    "porcentaje_descuento_lista2": null
+                },
+                "restricciones": {
+                    "acumulativa": false,
+                    "uso_multiple": false,
+                    "valor_minimo_compra": 0.0000,
+                    "valor_maximo_compra": 0.0000,
+                    "maximo_items_validos_por": "carrito",
+                    "maximo_items_validos": 0
+                },
+                "aplica_a": {
+                    "marcas": [],
+                    "categorias": [],
+                    "productos": [],
+                    "tipo_cliente": [],
+                    "variaciones": [
+                        "500L",
+                        "600L"
+                    ]
+                }
+            },
+            {
+                "id": "80-15",
+                "tipo": "regalo",
+                "nombre": "POS-BONIFICADOS",
+                "negocio": "mercolanta",
+                "fecha_inicio_utc": "2022-01-13T05:00:00",
+                "fecha_final_utc": "2022-01-30T05:00:00",
+                "configuracion": {
+                    "porcentaje": null,
+                    "valor": null,
+                    "pague": null,
+                    "lleve": null,
+                    "tipo": null,
+                    "items_de_regalo": [
+                        "500L"
+                    ],
+                    "cantidad_de_regalos_seleccionables": 1,
+                    "cantidad_minima_de_items_para_aplicar": 1.0000,
+                    "lista1": null,
+                    "lista2": null,
+                    "porcentaje_descuento_lista1": null,
+                    "porcentaje_descuento_lista2": null
+                },
+                "restricciones": {
+                    "acumulativa": false,
+                    "uso_multiple": false,
+                    "valor_minimo_compra": 0,
+                    "valor_maximo_compra": 0,
+                    "maximo_items_validos_por": "carrito",
+                    "maximo_items_validos": 0
+                },
+                "aplica_a": {
+                    "marcas": [],
+                    "categorias": [],
+                    "productos": [],
+                    "tipo_cliente": [],
+                    "variaciones": [
+                        "400L"
+                    ]
+                }
             }
         ]
     },
@@ -239,14 +320,22 @@
             {
                 "negocio": "mercolanta",
                 "documento": "9999991",
-                "cupo": 55000
+                "cupo_limite": 55000,
+                "cupo_actual": 55000,
+                "email": "yinadelapaz@gmail.com"
             },
             {
                 "negocio": "mercolanta",
                 "documento": "9999992",
-                "cupo": 70000       
+                "cupo_limite": 70000,
+                "cupo_actual": 40000,
+                "email": "jesidpolo04@gmail.com"
             }
         ]
+    },
+
+    "balance_cuenta":{
+        "cupo_actual": 40000
     },
 
     "tarjetas": {
