@@ -342,9 +342,9 @@
         "tarjetas":[
             {
                 "id": "1000",
-                "nombre": "",
+                "nombre": "TARJETA-PRUEBA",
                 "balance": 30000,
-                "codigo": "XYZ-ABC-124",
+                "codigo": "XTYB-IOBW-WLJE-SEYG",
                 "propietario": "1002999476",
                 "fecha_expiracion": "2022-08-04T12:00:00.000",
                 "fecha_emision": "2022-04-01T12:00:00.000",
@@ -352,9 +352,9 @@
             },
             {
                 "id": "2000",
-                "nombre": "",
+                "nombre": "TARJETA-PRUEBA",
                 "balance": 20000,
-                "codigo": "XYZ-ABC-125",
+                "codigo": "XTYB-IOBW-WLJE-SEYF",
                 "propietario": "1002999476",
                 "fecha_expiracion": "2022-08-04T12:00:00.000",
                 "fecha_emision": "2022-04-01T12:00:00.000",
@@ -362,9 +362,9 @@
             },
             {
                 "id": "3000",
-                "nombre": "",
+                "nombre": "TARJETA-PRUEBA",
                 "balance": 20000,
-                "codigo": "XYZ-ABC-126",
+                "codigo": "XTYB-IOBW-WLJE-SEYH",
                 "propietario": "78697882",
                 "fecha_expiracion": "2022-08-04T12:00:00.000",
                 "fecha_emision": "2022-04-01T12:00:00.000",
@@ -377,9 +377,9 @@
         "tarjetas":[
             {
                 "id": "1000",
-                "nombre": "",
+                "nombre": "TARJETA-PRUEBA",
                 "balance": 30000,
-                "codigo": "XYZ-ABC-124",
+                "codigo": "XTYB-IOBW-WLJE-SEYG",
                 "propietario": "1002999476",
                 "fecha_expiracion": "2022-08-04T12:00:00.000",
                 "fecha_emision": "2022-04-01T12:00:00.000",
@@ -387,9 +387,9 @@
             },
             {
                 "id": "2000",
-                "nombre": "",
+                "nombre": "TARJETA-PRUEBA",
                 "balance": 20000,
-                "codigo": "XYZ-ABC-125",
+                "codigo": "XTYB-IOBW-WLJE-SEYF",
                 "propietario": "1002999476",
                 "fecha_expiracion": "2022-08-04T12:00:00.000",
                 "fecha_emision": "2022-04-01T12:00:00.000",
@@ -399,7 +399,7 @@
     },
 
     "balance_tarjeta":{
-        "balance": 19000
+        "balance": 25000
     }
 
 }
