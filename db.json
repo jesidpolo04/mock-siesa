@@ -1,405 +1,394 @@
 {
-    "marcas":[
-        {
-            "id":"1000",
-            "nombre": "Colanta Int",
-            "negocio": "mercolanta"
-        },
-        {
-            "id":"2000",
-            "nombre": "Montefrio Int",
-            "negocio": "mercolanta"
-        },
-        {
-            "id":"3000",
-            "nombre":"Tampico Int",
-            "negocio": "mercolanta"
-        },
-        {
-            "id":"4000",
-            "nombre":"Pulpy Int",
-            "negocio": "mercolanta"
-        },
-        {
-            "id":"5000",
-            "nombre":"Bimbo Int",
-            "negocio": "mercolanta"
-        }
-    ],
-    
-    "familias":[
-        {
-            "id":"1000",
-            "nombre":"Leches Fluidas Int",
-            "negocio": "mercolanta",
-            "lineas":[
-                {
-                    "id":"1001",
-                    "nombre":"Leche Pasteurizada Int"
-                },
-                {
-                    "id":"1002",
-                    "nombre":"Leche UHT Int"
-                }
-            ]
-        },
-        {
-            "id":"2000",
-            "nombre":"Pulverizados Int",
-            "negocio": "mercolanta",
-            "lineas":[
-                {
-                    "id":"2001",
-                    "nombre":"Leche en Polvo Int"
-                },
-                {
-                    "id":"2002",
-                    "nombre":"Suero Int"
-                }
-            ]
-        }
-
-    ],
-
-    "productos":{
-        "productos":[
-            {
-                "tipo": 1,
-                "id": "400L",
-                "nombre": "PRODUCTO PRUEBA INTEGRACIÓN 1",
-                "referencia": "400L",
-                "ean": "1188",
-                "descripcion": "DESCRIPCIÓN PRODUCTO DE INTEGRACIÓN",
-                "id_marca": "1000",
-                "id_linea": "1001",
-                "tipo_producto": "ROSADO",
-                "unidad_medida": "UND",
-                "iva_aplica": 5.0000,
-                "negocio": "mercolanta",
-                "dimensiones": {
-                    "alto_producto": 0,
-                    "ancho_producto": 0,
-                    "largo_producto": 0,
-                    "peso_neto": 0,
-                    "peso_bruto": 0
-                },
-                "variaciones": []
-            },
-            {
-                "tipo": 1,
-                "id": "500L",
-                "nombre": "PRODUCTO PRUEBA INTEGRACIÓN 2",
-                "referencia": "500L",
-                "ean": "1188",
-                "descripcion": "PRODUCTO PRUEBA INTEGRACIÓN 2",
-                "id_marca": "2000",
-                "id_linea": "1001",
-                "tipo_producto": "ROSADO",
-                "unidad_medida": "UND",
-                "iva_aplica": 5.0000,
-                "negocio": "mercolanta",
-                "dimensiones": {
-                    "alto_producto": 0,
-                    "ancho_producto": 0,
-                    "largo_producto": 0,
-                    "peso_neto": 0,
-                    "peso_bruto": 0
-                },
-                "variaciones": []
-            },
-            {
-                "tipo": 1,
-                "id": "600L",
-                "nombre": "PRODUCTO DE INTEGRACIÓN 3",
-                "referencia": "600L",
-                "ean": "1188",
-                "descripcion": "PRODUCTO PRUEBA INTEGRACIÓN 1",
-                "id_marca": "3000",
-                "id_linea": "1001",
-                "tipo_producto": "ROSADO",
-                "unidad_medida": "UND",
-                "iva_aplica": 5.0000,
-                "negocio": "mercolanta",
-                "dimensiones": {
-                    "alto_producto": 0,
-                    "ancho_producto": 0,
-                    "largo_producto": 0,
-                    "peso_neto": 0,
-                    "peso_bruto": 0
-                },
-                "variaciones": []
-            }
-        ]
+  "marcas": [
+    {
+      "id": "1000",
+      "nombre": "Colanta Int",
+      "negocio": "mercolanta"
     },
-    "precios":{
-        "precios_productos":[
-            {
-                "id_producto" : "400L",
-                "id_variacion" : null,
-                "precio_publico" : 12590,
-                "negocio": "mercolanta"
-            },
-            {
-                "id_producto" : "500L",
-                "id_variacion" : null,
-                "precio_publico" : 6000,
-                "negocio": "mercolanta"
-            },
-            {
-                "id_producto" : "600L",
-                "id_variacion" : null,
-                "precio_publico" : 20200,
-                "negocio": "mercolanta"
-            }
-        ]
+    {
+      "id": "2000",
+      "nombre": "Montefrio Int",
+      "negocio": "mercolanta"
     },
-
-    "inventario_almacen":{
-        "inventario":[
-            {
-                "id_producto": "400L",
-                "id_variacion": null,
-                "cantidad": 104,
-                "negocio": "mercolanta"
-            },
-            {
-                "id_producto": "500L",
-                "id_variacion": null,
-                "cantidad": 32,
-                "negocio": "mercolanta" 
-            },
-            {
-                "id_producto": "600L",
-                "id_variacion": null,
-                "cantidad": 99,
-                "negocio": "mercolanta"
-            }
-        ]
+    {
+      "id": "3000",
+      "nombre": "Tampico Int",
+      "negocio": "mercolanta"
     },
-
-    "promociones": {
-        "promociones" : [
-            {
-                "id": "42C",
-                "negocio": "mercolanta",
-                "tipo": "nominal",
-                "nombre": "$40.000 pesos en producto 1 integración",
-                "fecha_inicio_utc": "2022-05-01T23:30:00.00Z",
-                "fecha_final_utc": "2022-05-30T24:00:00.00Z",
-                "configuracion":{
-                    "valor": 40000
-                },
-                "aplica_a":{
-                    "marcas":[],
-                    "categorias":[],
-                    "productos":[
-                        "400L"
-                    ],
-                    "variaciones":[],
-                    "tipo_cliente":[
-                        "referido",
-                        "convenio",
-                        "empresarial"
-                    ]           
-                },
-                "restricciones":{
-                    "acumulativa": false,
-                    "uso_multiple": true,
-                    "valor_minimo_compra": 0,
-                    "valor_maximo_compra": 0,
-                    "maximo_items_validos_por": "carrito",
-                    "maximo_items_validos": 0
-                }
-            },
-            {
-                "id": "50-10",
-                "tipo": "bono",
-                "nombre": "POS - 2X1",
-                "negocio": "mercolanta",
-                "fecha_inicio_utc": "2021-05-01T05:00:00",
-                "fecha_final_utc": "2022-07-31T05:00:00",
-                "configuracion": {
-                    "porcentaje": null,
-                    "valor": 100.0000,
-                    "pague": 3,
-                    "lleve": 4,
-                    "tipo": "porcentaje",
-                    "items_de_regalo": null,
-                    "cantidad_de_regalos_seleccionables": null,
-                    "cantidad_minima_de_items_para_aplicar": null,
-                    "lista1": null,
-                    "lista2": null,
-                    "porcentaje_descuento_lista1": null,
-                    "porcentaje_descuento_lista2": null
-                },
-                "restricciones": {
-                    "acumulativa": false,
-                    "uso_multiple": false,
-                    "valor_minimo_compra": 0.0000,
-                    "valor_maximo_compra": 0.0000,
-                    "maximo_items_validos_por": "carrito",
-                    "maximo_items_validos": 0
-                },
-                "aplica_a": {
-                    "marcas": [],
-                    "categorias": [],
-                    "productos": [],
-                    "tipo_cliente": [],
-                    "variaciones": [
-                        "500L",
-                        "600L"
-                    ]
-                }
-            },
-            {
-                "id": "80-15",
-                "tipo": "regalo",
-                "nombre": "POS-BONIFICADOS",
-                "negocio": "mercolanta",
-                "fecha_inicio_utc": "2022-01-13T05:00:00",
-                "fecha_final_utc": "2022-01-30T05:00:00",
-                "configuracion": {
-                    "porcentaje": null,
-                    "valor": null,
-                    "pague": null,
-                    "lleve": null,
-                    "tipo": null,
-                    "items_de_regalo": [
-                        "500L"
-                    ],
-                    "cantidad_de_regalos_seleccionables": 1,
-                    "cantidad_minima_de_items_para_aplicar": 1.0000,
-                    "lista1": null,
-                    "lista2": null,
-                    "porcentaje_descuento_lista1": null,
-                    "porcentaje_descuento_lista2": null
-                },
-                "restricciones": {
-                    "acumulativa": false,
-                    "uso_multiple": false,
-                    "valor_minimo_compra": 0,
-                    "valor_maximo_compra": 0,
-                    "maximo_items_validos_por": "carrito",
-                    "maximo_items_validos": 0
-                },
-                "aplica_a": {
-                    "marcas": [],
-                    "categorias": [],
-                    "productos": [],
-                    "tipo_cliente": [],
-                    "variaciones": [
-                        "400L"
-                    ]
-                }
-            }
-        ]
+    {
+      "id": "4000",
+      "nombre": "Pulpy Int",
+      "negocio": "mercolanta"
     },
-
-    "almacenes":[
-        {
-            "id": "1024L",
-            "nombre": "Aguacatala"
-        },
-        {
-            "id": "1025C",
-            "nombre": "Buenos Aires"
-        },
-        {
-            "id": "1142B",
-            "nombre": "Caribe #1"
-        }
-    ],
-
-    "clientes": {
-        "status" : true,
-        "tipo_cliente" : "1001"
-    },
-
-    "cuentas": {
-        "cuentas":[
-            {
-                "negocio": "mercolanta",
-                "documento": "9999991",
-                "cupo_limite": 55000,
-                "cupo_actual": 55000,
-                "email": "yinadelapaz@gmail.com"
-            },
-            {
-                "negocio": "mercolanta",
-                "documento": "9999992",
-                "cupo_limite": 70000,
-                "cupo_actual": 40000,
-                "email": "jesidpolo04@gmail.com"
-            }
-        ]
-    },
-
-    "balance_cuenta":{
-        "cupo_actual": 40000
-    },
-
-    "tarjetas": {
-        "tarjetas":[
-            {
-                "id": "1000",
-                "nombre": "TARJETA-PRUEBA",
-                "balance": 30000,
-                "codigo": "XTYB-IOBW-WLJE-SEYG",
-                "propietario": "1002999476",
-                "fecha_expiracion": "2022-08-04T12:00:00.000",
-                "fecha_emision": "2022-04-01T12:00:00.000",
-                "business":"mercolanta"
-            },
-            {
-                "id": "2000",
-                "nombre": "TARJETA-PRUEBA",
-                "balance": 20000,
-                "codigo": "XTYB-IOBW-WLJE-SEYF",
-                "propietario": "1002999476",
-                "fecha_expiracion": "2022-08-04T12:00:00.000",
-                "fecha_emision": "2022-04-01T12:00:00.000",
-                "business":"mercolanta"
-            },
-            {
-                "id": "3000",
-                "nombre": "TARJETA-PRUEBA",
-                "balance": 20000,
-                "codigo": "XTYB-IOBW-WLJE-SEYH",
-                "propietario": "78697882",
-                "fecha_expiracion": "2022-08-04T12:00:00.000",
-                "fecha_emision": "2022-04-01T12:00:00.000",
-                "business":"mercolanta"
-            }
-        ]
-    },
-
-    "tarjetas_documento_negocio": {
-        "tarjetas":[
-            {
-                "id": "1000",
-                "nombre": "TARJETA-PRUEBA",
-                "balance": 30000,
-                "codigo": "XTYB-IOBW-WLJE-SEYG",
-                "propietario": "1002999476",
-                "fecha_expiracion": "2022-08-04T12:00:00.000",
-                "fecha_emision": "2022-04-01T12:00:00.000",
-                "business":"mercolanta"
-            },
-            {
-                "id": "2000",
-                "nombre": "TARJETA-PRUEBA",
-                "balance": 20000,
-                "codigo": "XTYB-IOBW-WLJE-SEYF",
-                "propietario": "1002999476",
-                "fecha_expiracion": "2022-08-04T12:00:00.000",
-                "fecha_emision": "2022-04-01T12:00:00.000",
-                "business":"mercolanta"
-            }
-        ]
-    },
-
-    "balance_tarjeta":{
-        "balance": 25000
+    {
+      "id": "5000",
+      "nombre": "Bimbo Int",
+      "negocio": "mercolanta"
     }
-
+  ],
+  "familias": [
+    {
+      "id": "1000",
+      "nombre": "Leches Fluidas Int",
+      "negocio": "mercolanta",
+      "lineas": [
+        {
+          "id": "1001",
+          "nombre": "Leche Pasteurizada Int"
+        },
+        {
+          "id": "1002",
+          "nombre": "Leche UHT Int"
+        }
+      ]
+    },
+    {
+      "id": "2000",
+      "nombre": "Pulverizados Int",
+      "negocio": "mercolanta",
+      "lineas": [
+        {
+          "id": "2001",
+          "nombre": "Leche en Polvo Int"
+        },
+        {
+          "id": "2002",
+          "nombre": "Suero Int"
+        }
+      ]
+    }
+  ],
+  "productos": {
+    "productos": [
+      {
+        "tipo": 1,
+        "id": "400L",
+        "nombre": "PRODUCTO PRUEBA INTEGRACIÓN 1",
+        "referencia": "400L",
+        "ean": "1188",
+        "descripcion": "DESCRIPCIÓN PRODUCTO DE INTEGRACIÓN",
+        "id_marca": "1000",
+        "id_linea": "1001",
+        "tipo_producto": "ROSADO",
+        "unidad_medida": "UND",
+        "iva_aplica": 5,
+        "negocio": "mercolanta",
+        "dimensiones": {
+          "alto_producto": 0,
+          "ancho_producto": 0,
+          "largo_producto": 0,
+          "peso_neto": 0,
+          "peso_bruto": 0
+        },
+        "variaciones": []
+      },
+      {
+        "tipo": 1,
+        "id": "500L",
+        "nombre": "PRODUCTO PRUEBA INTEGRACIÓN 2",
+        "referencia": "500L",
+        "ean": "1188",
+        "descripcion": "PRODUCTO PRUEBA INTEGRACIÓN 2",
+        "id_marca": "2000",
+        "id_linea": "1001",
+        "tipo_producto": "ROSADO",
+        "unidad_medida": "UND",
+        "iva_aplica": 5,
+        "negocio": "mercolanta",
+        "dimensiones": {
+          "alto_producto": 0,
+          "ancho_producto": 0,
+          "largo_producto": 0,
+          "peso_neto": 0,
+          "peso_bruto": 0
+        },
+        "variaciones": []
+      },
+      {
+        "tipo": 1,
+        "id": "600L",
+        "nombre": "PRODUCTO DE INTEGRACIÓN 3",
+        "referencia": "600L",
+        "ean": "1188",
+        "descripcion": "PRODUCTO PRUEBA INTEGRACIÓN 1",
+        "id_marca": "3000",
+        "id_linea": "1001",
+        "tipo_producto": "ROSADO",
+        "unidad_medida": "UND",
+        "iva_aplica": 5,
+        "negocio": "mercolanta",
+        "dimensiones": {
+          "alto_producto": 0,
+          "ancho_producto": 0,
+          "largo_producto": 0,
+          "peso_neto": 0,
+          "peso_bruto": 0
+        },
+        "variaciones": []
+      }
+    ]
+  },
+  "precios": {
+    "precios_productos": [
+      {
+        "id_producto": "400L",
+        "id_variacion": null,
+        "precio_publico": 12590,
+        "negocio": "mercolanta"
+      },
+      {
+        "id_producto": "500L",
+        "id_variacion": null,
+        "precio_publico": 6000,
+        "negocio": "mercolanta"
+      },
+      {
+        "id_producto": "600L",
+        "id_variacion": null,
+        "precio_publico": 20200,
+        "negocio": "mercolanta"
+      }
+    ]
+  },
+  "inventario_almacen": {
+    "inventario": [
+      {
+        "id_producto": "400L",
+        "id_variacion": null,
+        "cantidad": 104,
+        "negocio": "mercolanta"
+      },
+      {
+        "id_producto": "500L",
+        "id_variacion": null,
+        "cantidad": 32,
+        "negocio": "mercolanta"
+      },
+      {
+        "id_producto": "600L",
+        "id_variacion": null,
+        "cantidad": 99,
+        "negocio": "mercolanta"
+      }
+    ]
+  },
+  "promociones": {
+    "promociones": [
+      {
+        "id": "42C",
+        "negocio": "mercolanta",
+        "tipo": "nominal",
+        "nombre": "$40.000 pesos en producto 1 integración",
+        "fecha_inicio_utc": "2022-05-01T23:30:00.00Z",
+        "fecha_final_utc": "2022-05-30T24:00:00.00Z",
+        "configuracion": {
+          "valor": 40000
+        },
+        "aplica_a": {
+          "marcas": [],
+          "categorias": [],
+          "productos": [
+            "400L"
+          ],
+          "variaciones": [],
+          "tipo_cliente": [
+            "referido",
+            "convenio",
+            "empresarial"
+          ]
+        },
+        "restricciones": {
+          "acumulativa": false,
+          "uso_multiple": true,
+          "valor_minimo_compra": 0,
+          "valor_maximo_compra": 0,
+          "maximo_items_validos_por": "carrito",
+          "maximo_items_validos": 0
+        }
+      },
+      {
+        "id": "50-10",
+        "tipo": "bono",
+        "nombre": "POS - 2X1",
+        "negocio": "mercolanta",
+        "fecha_inicio_utc": "2021-05-01T05:00:00",
+        "fecha_final_utc": "2022-07-31T05:00:00",
+        "configuracion": {
+          "porcentaje": null,
+          "valor": 100,
+          "pague": 3,
+          "lleve": 4,
+          "tipo": "porcentaje",
+          "items_de_regalo": null,
+          "cantidad_de_regalos_seleccionables": null,
+          "cantidad_minima_de_items_para_aplicar": null,
+          "lista1": null,
+          "lista2": null,
+          "porcentaje_descuento_lista1": null,
+          "porcentaje_descuento_lista2": null
+        },
+        "restricciones": {
+          "acumulativa": false,
+          "uso_multiple": false,
+          "valor_minimo_compra": 0,
+          "valor_maximo_compra": 0,
+          "maximo_items_validos_por": "carrito",
+          "maximo_items_validos": 0
+        },
+        "aplica_a": {
+          "marcas": [],
+          "categorias": [],
+          "productos": [],
+          "tipo_cliente": [],
+          "variaciones": [
+            "500L",
+            "600L"
+          ]
+        }
+      },
+      {
+        "id": "80-15",
+        "tipo": "regalo",
+        "nombre": "POS-BONIFICADOS",
+        "negocio": "mercolanta",
+        "fecha_inicio_utc": "2022-01-13T05:00:00",
+        "fecha_final_utc": "2022-01-30T05:00:00",
+        "configuracion": {
+          "porcentaje": null,
+          "valor": null,
+          "pague": null,
+          "lleve": null,
+          "tipo": null,
+          "items_de_regalo": [
+            "500L"
+          ],
+          "cantidad_de_regalos_seleccionables": 1,
+          "cantidad_minima_de_items_para_aplicar": 1,
+          "lista1": null,
+          "lista2": null,
+          "porcentaje_descuento_lista1": null,
+          "porcentaje_descuento_lista2": null
+        },
+        "restricciones": {
+          "acumulativa": false,
+          "uso_multiple": false,
+          "valor_minimo_compra": 0,
+          "valor_maximo_compra": 0,
+          "maximo_items_validos_por": "carrito",
+          "maximo_items_validos": 0
+        },
+        "aplica_a": {
+          "marcas": [],
+          "categorias": [],
+          "productos": [],
+          "tipo_cliente": [],
+          "variaciones": [
+            "400L"
+          ]
+        }
+      }
+    ]
+  },
+  "almacenes": [
+    {
+      "id": "1024L",
+      "nombre": "Aguacatala"
+    },
+    {
+      "id": "1025C",
+      "nombre": "Buenos Aires"
+    },
+    {
+      "id": "1142B",
+      "nombre": "Caribe #1"
+    }
+  ],
+  "clientes": {
+    "status": true,
+    "tipo_cliente": "1001"
+  },
+  "cuentas": {
+    "cuentas": [
+      {
+        "negocio": "mercolanta",
+        "documento": "9999991",
+        "cupo_limite": 55000,
+        "cupo_actual": 55000,
+        "email": "yinadelapaz@gmail.com"
+      },
+      {
+        "negocio": "mercolanta",
+        "documento": "9999992",
+        "cupo_limite": 70000,
+        "cupo_actual": 40000,
+        "email": "jesidpolo04@gmail.com"
+      }
+    ]
+  },
+  "balance_cuenta": {
+    "cupo_actual": 40000
+  },
+  "tarjetas": {
+    "tarjetas": [
+      {
+        "id": "1000",
+        "nombre": "TARJETA-PRUEBA",
+        "balance": 30000,
+        "codigo": "XTYB-IOBW-WLJE-SEYG",
+        "propietario": "1002999476",
+        "fecha_expiracion": "2022-08-04T12:00:00.000",
+        "fecha_emision": "2022-04-01T12:00:00.000",
+        "business": "mercolanta"
+      },
+      {
+        "id": "2000",
+        "nombre": "TARJETA-PRUEBA",
+        "balance": 20000,
+        "codigo": "XTYB-IOBW-WLJE-SEYF",
+        "propietario": "1002999476",
+        "fecha_expiracion": "2022-08-04T12:00:00.000",
+        "fecha_emision": "2022-04-01T12:00:00.000",
+        "business": "mercolanta"
+      },
+      {
+        "id": "3000",
+        "nombre": "TARJETA-PRUEBA",
+        "balance": 20000,
+        "codigo": "XTYB-IOBW-WLJE-SEYH",
+        "propietario": "78697882",
+        "fecha_expiracion": "2022-08-04T12:00:00.000",
+        "fecha_emision": "2022-04-01T12:00:00.000",
+        "business": "mercolanta"
+      }
+    ]
+  },
+  "tarjetas_documento_negocio": {
+    "tarjetas": [
+      {
+        "id": "1000",
+        "nombre": "TARJETA-PRUEBA",
+        "balance": 30000,
+        "codigo": "XTYB-IOBW-WLJE-SEYG",
+        "propietario": "1002999476",
+        "fecha_expiracion": "2022-08-04T12:00:00.000",
+        "fecha_emision": "2022-04-01T12:00:00.000",
+        "business": "mercolanta"
+      },
+      {
+        "id": "2000",
+        "nombre": "TARJETA-PRUEBA",
+        "balance": 20000,
+        "codigo": "XTYB-IOBW-WLJE-SEYF",
+        "propietario": "1002999476",
+        "fecha_expiracion": "2022-08-04T12:00:00.000",
+        "fecha_emision": "2022-04-01T12:00:00.000",
+        "business": "mercolanta"
+      }
+    ]
+  },
+  "balance_tarjeta": {
+    "balance": 25000
+  },
+  "siesa_order_endpoint": [
+  ]
 }
